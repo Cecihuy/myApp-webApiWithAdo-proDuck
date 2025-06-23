@@ -6,8 +6,8 @@ namespace myApp_webApiWithAdo_proDuck.Repository {
   public interface IProductRepo {
     IEnumerable GetAllProducts();
     Product GetProductById(int id);
-    Product SaveProduct(Product person);
-    Product UpdateProduct(int id, Product person);
+    Product SaveProduct(Product product);
+    Product UpdateProduct(int id, Product product);
     void DeleteProduct(int id);
   }
 }
