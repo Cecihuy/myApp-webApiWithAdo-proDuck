@@ -1,6 +1,14 @@
-﻿CREATE TABLE [dbo].[product]
-(
-	[Id] INT NOT NULL PRIMARY KEY, 
-    [Name] NVARCHAR(15) NULL, 
-    [Price] BIGINT NULL
-)
+﻿CREATE DATABASE proDuck;
+---------------------------------------------------
+USE [proDuck];
+---------------------------------------------------
+CREATE TABLE [dbo].[product] (
+	[id] INT NOT NULL PRIMARY KEY,
+  [name] NVARCHAR(15) NULL, 
+  [price] BIGINT NULL
+);
+---------------------------------------------------
+INSERT INTO [dbo].[product] ([id], [name], [price]) 
+  VALUES (1, N'Galon', 20000);
+INSERT INTO [dbo].[product] ([id], [name], [price]) 
+  VALUES (2, N'Nasi', 5000);
